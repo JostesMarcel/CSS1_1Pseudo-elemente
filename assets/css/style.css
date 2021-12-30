@@ -1,0 +1,55 @@
+h3::first-letter {
+    color: #00796B;
+    font-size: 3em;
+}
+
+h3:hover::first-letter {
+    color: #4FC3F7;
+}
+
+ul:nth-of-type(1) li:first-child::first-letter {
+    color: #4FC3F7;
+    font-size: 2em;
+    text-decoration: overline;
+}
+
+ul:nth-of-type(1) li:nth-child(2)::first-letter {
+    color: #C51162;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+ul:nth-of-type(1) li:nth-child(3)::first-letter {
+    color: #64DD17;
+    font-size: 2em;
+    text-decoration: line-through;
+}
+
+ul:nth-of-type(1) li:nth-child(3) {
+    text-decoration: line-through;
+}
+
+section:nth-of-type(1) p:first-child {
+    color: #37474F;
+    text-indent: 50px;
+}
+
+section:nth-of-type(1) p::first-line {
+    font-size: 1.3em;
+}
+section:nth-of-type(1) p:not(p:first-child)::first-letter {
+    color: #D50000;
+    font-size: 1.5em;
+}
+
+section:nth-of-type(1) p:not(p:first-child)::first-line {
+    color: green;
+}
+
+section:nth-of-type(1) p:not(p:first-child):hover::first-line {
+    color: #303F9F;
+}
+
+section:nth-of-type(1) p:nth-child(even) {
+    font-weight: 600;
+}
